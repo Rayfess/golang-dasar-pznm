@@ -1,5 +1,60 @@
 # golang-dasar-pznm
 
+## Sources
+
+**Slides GO Materials**
+https://docs.google.com/presentation/d/1J0DbqyuLQVnGnkbL7bX3jL6iQc6RdXy8zQkfH8rbE0Q/edit
+
+**Main Sources Code of GO Material**
+https://github.com/ProgrammerZamanNow/belajar-golang-dasar-2023
+
+## Appendix
+
+- **In one package, there MUST NOT be the same function.**
+
+#### Type Data Number
+
+Divided to 2 Type :
+
+- Integer
+- Floating Point
+
+##### Type Data Integer 1
+
+| Type Data | Min Value            | Max Value           |
+| :-------- | :------------------- | :------------------ |
+| `int8`    | -128                 | 127                 |
+| `int16`   | -32768               | 32767               |
+| `int32`   | -2147483648          | 2147483647          |
+| `int64`   | -9223372036854775808 | 9223372036854775807 |
+
+##### Type Data Integer 2
+
+| Type Data | Min Value | Max Value            |
+| :-------- | :-------- | :------------------- |
+| `uint8`   | 0         | 255                  |
+| `uint16`  | 0         | 65535                |
+| `uint32`  | 0         | 4294967295           |
+| `uint64`  | 0         | 18446744073709551615 |
+
+##### Type Data Floating Point
+
+| Type Data    | Description                              |
+| :----------- | :--------------------------------------- |
+| `float32`    | **1.18x 10⁻³⁸** up To **3.4x10³⁸**       |
+| `float64`    | **2.23x 10⁻³⁰⁸** up To **3.4x10³⁰⁸**     |
+| `complex64`  | float32 but has real and imaginary parts |
+| `complex128` | float64 but has real and imaginary parts |
+
+##### Alias
+
+| Type Data | Alias For      |
+| :-------- | :------------- |
+| `byte`    | uint8          |
+| `rune`    | int32          |
+| `int`     | Min for int32  |
+| `uint`    | Min for uint32 |
+
 ## Usage
 
 ### Creating Module
@@ -10,7 +65,7 @@ go mod init project-name
 
 ### Compile the program to app
 
-###### The output of compiling build is correspond to the module name
+##### The Output of Compiling Build is Correspond to the Module Name
 
 ```go
 go build
