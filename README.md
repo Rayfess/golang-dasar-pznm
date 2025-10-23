@@ -101,16 +101,18 @@ belajar-golang-dasar.exe
 Hello World!
 ```
 
-### Creating Variable
+### Declaring Variable
+
+Divided into 2 Type :
+
+- `const` for declaring only one time
+- `var` usefull for many uses of creating multiple variables
+
+#### Var Use Case
 
 ```go
-package main
-
-import "fmt"
-func main() {
 	var name = "Rhaef"
 	fmt.Println(name)
-}
 ```
 
 <br>
@@ -118,18 +120,32 @@ func main() {
 **shorthand for declare variable** `:=`
 
 ```go
-package main
-
-import "fmt"
-func main() {
 	name := "Rhaef"
 	fmt.Println(name)
 
-// dont use := again, because its only needed on first declare
+  // dont use := again, because its only needed on first declare
 	name = "Jacky"
 	fmt.Println(name)
-}
 ```
+
+#### Const Declaring
+
+```go
+	// Declare using Const, cannot redeclare value
+	const age = 17
+    age = 20 // will cause error because rules that CONST, cannot be redeclared
+	fmt.Println(age)
+```
+
+#### Diffrence Between Const and Var
+
+`const`
+
+**Cannot CHANGE VALUE, it will cause error**
+
+`var`
+
+**Can CHANGE VALUE, so more dynamic use**
 
 ### Run the App Without Compiling
 

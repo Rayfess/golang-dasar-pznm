@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 func main() {
+	// var name = "Rhaef"
 	name := "Rhaef"
 	fmt.Println(name)
 
@@ -14,8 +15,4 @@ func main() {
 		lastName = "Downey"
 	)
 	fmt.Println(firstName, lastName)
-
-	// Declare using Const, cannot redeclare value
-	const age = 17
-	fmt.Println(age)
 }
