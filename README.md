@@ -64,6 +64,14 @@ https://github.com/ProgrammerZamanNow/belajar-golang-dasar-2023
 - `true`
 - `false`
 
+#### Type Data String
+
+**Characters that are included in Quotation Marks. Example:**
+<br>
+
+- `"inserthere"`
+- `"67"` _still in a string, because the characters are included on quotation marks_
+
 ## Usage
 
 ### Creating Module
