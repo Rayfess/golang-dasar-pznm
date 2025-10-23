@@ -101,6 +101,36 @@ belajar-golang-dasar.exe
 Hello World!
 ```
 
+### Creating Variable
+
+```go
+package main
+
+import "fmt"
+func main() {
+	var name = "Rhaef"
+	fmt.Println(name)
+}
+```
+
+<br>
+
+**shorthand for declare variable** `:=`
+
+```go
+package main
+
+import "fmt"
+func main() {
+	name := "Rhaef"
+	fmt.Println(name)
+
+// dont use := again, because its only needed on first declare
+	name = "Jacky"
+	fmt.Println(name)
+}
+```
+
 ### Run the App Without Compiling
 
 ###### The App MUST BE COMPILED, except for Development stages
