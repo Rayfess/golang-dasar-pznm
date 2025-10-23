@@ -3,9 +3,11 @@
 ## Sources
 
 **Slides GO Materials**
+<br>
 https://docs.google.com/presentation/d/1J0DbqyuLQVnGnkbL7bX3jL6iQc6RdXy8zQkfH8rbE0Q/edit
 
 **Main Sources Code of GO Material**
+<br>
 https://github.com/ProgrammerZamanNow/belajar-golang-dasar-2023
 
 ## Appendix
@@ -14,10 +16,10 @@ https://github.com/ProgrammerZamanNow/belajar-golang-dasar-2023
 
 #### Type Data Number
 
-Divided to 2 Type :
+**Divided into 2 Type :**
 
-- Integer
-- Floating Point
+- `Integer`
+- `Floating Point`
 
 ##### Type Data Integer 1
 
@@ -54,6 +56,13 @@ Divided to 2 Type :
 | `rune`    | int32          |
 | `int`     | Min for int32  |
 | `uint`    | Min for uint32 |
+
+#### Type Data Boolean
+
+**Divided into 2 Type :**
+
+- `true`
+- `false`
 
 ## Usage
 
