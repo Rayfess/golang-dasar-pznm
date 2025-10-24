@@ -14,14 +14,14 @@ https://github.com/ProgrammerZamanNow/belajar-golang-dasar-2023
 
 - **In one package, there MUST NOT be the same function.**
 
-#### Type Data Number
+### Type Data Number
 
-**Divided into 2 Type :**
+Divided into 2 Type :
 
 - `Integer`
 - `Floating Point`
 
-##### Type Data Integer 1
+#### Type Data Integer 1
 
 | Type Data | Min Value            | Max Value           |
 | :-------- | :------------------- | :------------------ |
@@ -30,7 +30,7 @@ https://github.com/ProgrammerZamanNow/belajar-golang-dasar-2023
 | `int32`   | -2147483648          | 2147483647          |
 | `int64`   | -9223372036854775808 | 9223372036854775807 |
 
-##### Type Data Integer 2
+#### Type Data Integer 2
 
 | Type Data | Min Value | Max Value            |
 | :-------- | :-------- | :------------------- |
@@ -39,7 +39,7 @@ https://github.com/ProgrammerZamanNow/belajar-golang-dasar-2023
 | `uint32`  | 0         | 4294967295           |
 | `uint64`  | 0         | 18446744073709551615 |
 
-##### Type Data Floating Point
+### Type Data Floating Point
 
 | Type Data    | Description                              |
 | :----------- | :--------------------------------------- |
@@ -48,7 +48,7 @@ https://github.com/ProgrammerZamanNow/belajar-golang-dasar-2023
 | `complex64`  | float32 but has real and imaginary parts |
 | `complex128` | float64 but has real and imaginary parts |
 
-##### Alias
+### Alias
 
 | Type Data | Alias For      |
 | :-------- | :------------- |
@@ -57,22 +57,21 @@ https://github.com/ProgrammerZamanNow/belajar-golang-dasar-2023
 | `int`     | Min for int32  |
 | `uint`    | Min for uint32 |
 
-#### Type Data Boolean
+### Type Data Boolean
 
-**Divided into 2 Type :**
+Divided into 2 Type :
 
 - `true`
 - `false`
 
-#### Type Data String
+### Type Data String
 
-**Characters that are included in Quotation Marks. Example:**
-<br>
+Characters that are included in Quotation Marks. Example:
 
 - `"inserthere"`
 - `"67"` _still in a string, because the characters are included on quotation marks_
 
-#### Augmented Assignments
+### Augmented Assignments
 
 | Math Operations | Augmented Assignment |
 | :-------------- | :------------------- |
