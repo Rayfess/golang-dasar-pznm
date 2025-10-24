@@ -72,6 +72,16 @@ https://github.com/ProgrammerZamanNow/belajar-golang-dasar-2023
 - `"inserthere"`
 - `"67"` _still in a string, because the characters are included on quotation marks_
 
+#### Augmented Assignments
+
+| Math Operations | Augmented Assignment |
+| :-------------- | :------------------- |
+| `a = a + 10`    | `a += 10`            |
+| `a = a - 10`    | `a -= 10`            |
+| `a = a * 10`    | `a *= 10`            |
+| `a = a / 10`    | `a /= 10`            |
+| `a = a % 10`    | `a %= 10`            |
+
 ## Usage
 
 ### Creating Module

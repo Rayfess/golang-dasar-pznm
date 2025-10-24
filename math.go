@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	const (
 		a = 5
@@ -17,4 +19,11 @@ func main() {
 	println(e)
 	println(f)
 	println(g)
+
+// augmented assignment
+
+	var i = 5
+	i += 20 // i = i + 20	
+	i /= 5 // i = i + 5	
+	fmt.Println(i)
 }
