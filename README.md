@@ -81,6 +81,16 @@ Characters that are included in Quotation Marks. Example:
 | `a = a / 10`    | `a /= 10`            |
 | `a = a % 10`    | `a %= 10`            |
 
+### Unary Operator
+
+| Operator | Description     |
+| :------- | :-------------- |
+| `++`     | Increment       |
+| `--`     | Decrement       |
+| `-`      | Negative        |
+| `+`      | Positive        |
+| `!`      | Reverse Boolean |
+
 ## Usage
 
 ### Creating Module
