@@ -23,39 +23,39 @@ Divided into 2 Type :
 
 #### Type Data Integer 1
 
-| Type Data | Min Value            | Max Value           |
-| :-------- | :------------------- | :------------------ |
-| `int8`    | -128                 | 127                 |
-| `int16`   | -32768               | 32767               |
-| `int32`   | -2147483648          | 2147483647          |
-| `int64`   | -9223372036854775808 | 9223372036854775807 |
+| Type Data |      Min Value       |      Max Value      |
+| :-------: | :------------------: | :-----------------: |
+|  `int8`   |         -128         |         127         |
+|  `int16`  |        -32768        |        32767        |
+|  `int32`  |     -2147483648      |     2147483647      |
+|  `int64`  | -9223372036854775808 | 9223372036854775807 |
 
 #### Type Data Integer 2
 
-| Type Data | Min Value | Max Value            |
-| :-------- | :-------- | :------------------- |
-| `uint8`   | 0         | 255                  |
-| `uint16`  | 0         | 65535                |
-| `uint32`  | 0         | 4294967295           |
-| `uint64`  | 0         | 18446744073709551615 |
+| Type Data | Min Value |      Max Value       |
+| :-------: | :-------: | :------------------: |
+|  `uint8`  |     0     |         255          |
+| `uint16`  |     0     |        65535         |
+| `uint32`  |     0     |      4294967295      |
+| `uint64`  |     0     | 18446744073709551615 |
 
 ### Type Data Floating Point
 
-| Type Data    | Description                              |
-| :----------- | :--------------------------------------- |
-| `float32`    | **1.18x 10⁻³⁸** up To **3.4x10³⁸**       |
-| `float64`    | **2.23x 10⁻³⁰⁸** up To **3.4x10³⁰⁸**     |
+|  Type Data   |               Description                |
+| :----------: | :--------------------------------------: |
+|  `float32`   |    **1.18x 10⁻³⁸** up To **3.4x10³⁸**    |
+|  `float64`   |   **2.23x 10⁻³⁰⁸** up To **3.4x10³⁰⁸**   |
 | `complex64`  | float32 but has real and imaginary parts |
 | `complex128` | float64 but has real and imaginary parts |
 
 ### Alias
 
-| Type Data | Alias For      |
-| :-------- | :------------- |
-| `byte`    | uint8          |
-| `rune`    | int32          |
-| `int`     | Min for int32  |
-| `uint`    | Min for uint32 |
+| Type Data |   Alias For    |
+| :-------: | :------------: |
+|  `byte`   |     uint8      |
+|  `rune`   |     int32      |
+|   `int`   | Min for int32  |
+|  `uint`   | Min for uint32 |
 
 ### Type Data Boolean
 
@@ -74,22 +74,82 @@ Characters that are included in Quotation Marks. Example:
 ### Augmented Assignments
 
 | Math Operations | Augmented Assignment |
-| :-------------- | :------------------- |
-| `a = a + 10`    | `a += 10`            |
-| `a = a - 10`    | `a -= 10`            |
-| `a = a * 10`    | `a *= 10`            |
-| `a = a / 10`    | `a /= 10`            |
-| `a = a % 10`    | `a %= 10`            |
+| :-------------: | :------------------: |
+|  `a = a + 10`   |      `a += 10`       |
+|  `a = a - 10`   |      `a -= 10`       |
+|  `a = a * 10`   |      `a *= 10`       |
+|  `a = a / 10`   |      `a /= 10`       |
+|  `a = a % 10`   |      `a %= 10`       |
 
 ### Unary Operator
 
-| Operator | Description     |
-| :------- | :-------------- |
-| `++`     | Increment       |
-| `--`     | Decrement       |
-| `-`      | Negative        |
-| `+`      | Positive        |
-| `!`      | Reverse Boolean |
+| Operator |   Description   |
+| :------: | :-------------: |
+|   `++`   |    Increment    |
+|   `--`   |    Decrement    |
+|   `-`    |    Negative     |
+|   `+`    |    Positive     |
+|   `!`    | Reverse Boolean |
+
+### Comparison Operator
+
+| Operator | Description  |
+| :------: | :----------: |
+|   `>`    |  More Than   |
+|   `<`    |  Less Than   |
+|   `>=`   | More or Same |
+|   `<=`   | Less or Same |
+|   `==`   |   Same as    |
+|   `!=`   | Not Same as  |
+
+### Boolean Operator
+
+| Operator | Description |
+| :------: | :---------: |
+|   `&&`   |     And     |
+|   `⏐⏐`   |     Or      |
+|   `!`    |  Opposite   |
+
+##### `&&` Operator
+
+| Value 1 | Operator | Value2  | Result  |
+| :-----: | :------: | :-----: | :-----: |
+| `true`  |   `&&`   | `true`  | `true`  |
+| `true`  |   `&&`   | `false` | `false` |
+| `false` |   `&&`   | `false` | `true`  |
+| `false` |   `&&`   | `true`  | `false` |
+
+##### `⏐⏐` Operator
+
+| Value 1 | Operator | Value2  | Result  |
+| :-----: | :------: | :-----: | :-----: |
+| `true`  |   `⏐⏐`   | `true`  | `true`  |
+| `true`  |   `⏐⏐`   | `false` | `true`  |
+| `false` |   `⏐⏐`   | `true`  | `true`  |
+| `false` |   `⏐⏐`   | `false` | `false` |
+
+##### `!` Operator
+
+| Operator |  Value  | Result  |
+| :------: | :-----: | :-----: |
+|   `!`    | `true`  | `false` |
+|   `!`    | `false` | `true`  |
+
+##### Index in Array
+
+| Index | Sample Data |
+| :---: | :---------: |
+|  `0`  |   `Ahmad`   |
+|  `1`  |   `Bryan`   |
+|  `2`  |  `Cassie`   |
+
+### Function Array
+
+|       Operation        |       Description       |
+| :--------------------: | :---------------------: |
+|      `len(array)`      | Getting Length of Array |
+|    `arrray[index]`     |      Getting Data       |
+| `array[index] = value` |      Changing data      |
 
 ## Usage
 
