@@ -14,6 +14,38 @@ https://github.com/ProgrammerZamanNow/belajar-golang-dasar-2023
 
 - **In one package, there MUST NOT be the same function.**
 
+### Type Data Slice
+
+**Array** = stiff Container with fixed Capacity
+
+**Slice** = flexible and dynamic Container
+
+- **Type Data Slice is fragment from data Array**, Simillar to Array, but the things make it diffrence was size, Slice is changeable or dynamic
+- **Slice and Array always connected**, where Slice was accessing data to partial or complete
+- Has 3 Main Data, Pointer, length, and Capacity
+  - Pointer is first pointer in an array slice
+  - Length is length of the slice
+  - Capacity of the slice, which length musn't more than Capacity
+
+##### Creating Slice From Array
+
+|  Creating Slice   |                              Description                               |
+| :---------------: | :--------------------------------------------------------------------: |
+| `array[low:high]` |  Creating Slice from Array starts from index Low to index before High  |
+|   `array[low:]`   | Creating Slice from Array starts from index Low to last index in Array |
+|  `array[:high]`   |   Creating Slice from Array starts from index 0 to index before High   |
+|    `array[:]`     |  Creating Slice from Array starts from index 0 to last index in Array  |
+
+##### Function Slice
+
+|              Operation               |                                                   Description                                                   |
+| :----------------------------------: | :-------------------------------------------------------------------------------------------------------------: |
+|             `len(slice)`             |                                               For getting Length                                                |
+|             `cap(slice)`             |                                              For getting Capacity                                               |
+|        `append(slice, data)`         | Making new Slice that adds data to last position Slice, <br> if the capacity is full, make an new array instead |
+| `make([]TypeData, length, capacity)` |                                                Making new Slice                                                 |
+|     `copy(destination, source)`      |                                    Copying slice from source to destination                                     |
+
 ### Type Data Number
 
 Divided into 2 Type :
