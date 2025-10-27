@@ -14,6 +14,24 @@ https://github.com/ProgrammerZamanNow/belajar-golang-dasar-2023
 
 - **In one package, there MUST NOT be the same function.**
 
+### Type Data Map
+
+Type data Map is a collection of key-value data, where the keys are unique and cannot be duplicated.
+
+It is very flexible because it can contain as much data as possible.
+
+If there are duplicate keys, the keys and values will overwrite with the new one.
+
+##### Function Map
+
+| Operation                     | Desc                            |
+| :---------------------------- | :------------------------------ |
+| `len(map)`                    | getting total data in map       |
+| `map[key]`                    | taking data in map by key       |
+| `make[key] = value`           | changing data in map by key     |
+| `make(map[TypeKey]TypeValue)` | making new map                  |
+| `delete(map,key) `            | deleting all data in map by key |
+
 ### Type Data Slice
 
 **Array** = stiff Container with fixed Capacity
@@ -46,14 +64,14 @@ https://github.com/ProgrammerZamanNow/belajar-golang-dasar-2023
 | `make([]TypeData, length, capacity)` |                                                Making new Slice                                                 |
 |     `copy(destination, source)`      |                                    Copying slice from source to destination                                     |
 
-### Type Data Number
+##### Type Data Number
 
 Divided into 2 Type :
 
 - `Integer`
 - `Floating Point`
 
-#### Type Data Integer 1
+##### Type Data Integer 1
 
 | Type Data |      Min Value       |      Max Value      |
 | :-------: | :------------------: | :-----------------: |
@@ -62,7 +80,7 @@ Divided into 2 Type :
 |  `int32`  |     -2147483648      |     2147483647      |
 |  `int64`  | -9223372036854775808 | 9223372036854775807 |
 
-#### Type Data Integer 2
+##### Type Data Integer 2
 
 | Type Data | Min Value |      Max Value       |
 | :-------: | :-------: | :------------------: |
@@ -71,7 +89,7 @@ Divided into 2 Type :
 | `uint32`  |     0     |      4294967295      |
 | `uint64`  |     0     | 18446744073709551615 |
 
-### Type Data Floating Point
+##### Type Data Floating Point
 
 |  Type Data   |               Description                |
 | :----------: | :--------------------------------------: |
@@ -80,7 +98,7 @@ Divided into 2 Type :
 | `complex64`  | float32 but has real and imaginary parts |
 | `complex128` | float64 but has real and imaginary parts |
 
-### Alias
+##### Alias
 
 | Type Data |   Alias For    |
 | :-------: | :------------: |
@@ -89,21 +107,21 @@ Divided into 2 Type :
 |   `int`   | Min for int32  |
 |  `uint`   | Min for uint32 |
 
-### Type Data Boolean
+##### Type Data Boolean
 
 Divided into 2 Type :
 
 - `true`
 - `false`
 
-### Type Data String
+##### Type Data String
 
 Characters that are included in Quotation Marks. Example:
 
 - `"inserthere"`
 - `"67"` _still in a string, because the characters are included on quotation marks_
 
-### Augmented Assignments
+#### Augmented Assignments
 
 | Math Operations | Augmented Assignment |
 | :-------------: | :------------------: |
@@ -113,7 +131,7 @@ Characters that are included in Quotation Marks. Example:
 |  `a = a / 10`   |      `a /= 10`       |
 |  `a = a % 10`   |      `a %= 10`       |
 
-### Unary Operator
+#### Unary Operator
 
 | Operator |   Description   |
 | :------: | :-------------: |
@@ -123,7 +141,7 @@ Characters that are included in Quotation Marks. Example:
 |   `+`    |    Positive     |
 |   `!`    | Reverse Boolean |
 
-### Comparison Operator
+#### Comparison Operator
 
 | Operator | Description  |
 | :------: | :----------: |
@@ -134,7 +152,7 @@ Characters that are included in Quotation Marks. Example:
 |   `==`   |   Same as    |
 |   `!=`   | Not Same as  |
 
-### Boolean Operator
+#### Boolean Operator
 
 | Operator | Description |
 | :------: | :---------: |
@@ -175,7 +193,7 @@ Characters that are included in Quotation Marks. Example:
 |  `1`  |   `Bryan`   |
 |  `2`  |  `Cassie`   |
 
-### Function Array
+#### Function Array
 
 |       Operation        |       Description       |
 | :--------------------: | :---------------------: |
