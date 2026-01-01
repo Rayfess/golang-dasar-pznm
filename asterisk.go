@@ -17,9 +17,11 @@ func main() {
 	fmt.Println(address2)
 
 
-	// address2 = &Address{"Paris", "London", "here"} // creating new struct cancel the changing of reference
-	*address2 = Address{"Paris", "London", "here"} // creating new struct cancel the changing of reference
-	fmt.Println(address1) // didnt changed
-	fmt.Println(address2) // getting changed
+	address2 = &Address{"Paris", "London", "here"} // changing and creating new struct only for address2 by using pointer (&)
+	// *address2 = Address{"Paris", "London", "here"} // overwriting the data struct but still same referencing the pointer 
+
+
+	fmt.Println(address1) 
+	fmt.Println(address2) 
 
 }
